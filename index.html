@@ -1,54 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <title>Alexa Basarte – CS Legacy Portfolio</title>
-    <style>
+  <meta charset="UTF-8">
+  <title>Alexa Basarte – CS Legacy Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+  <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: 'Comic Neue', cursive, sans-serif;
+      background-color: #FFCCFF;
+      color: #3B3B3B;
     }
+
     header {
-      background: #222;
+      background-color: #FF66CC;
+      background-image: linear-gradient(135deg, #FF66CC 0%, #FF99CC 100%);
       color: white;
-      padding: 30px 20px;
       text-align: center;
+      padding: 2rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px #fff;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
     main {
-      padding: 20px;
-      max-width: 800px;
+      padding: 2rem;
+      max-width: 900px;
       margin: auto;
     }
+
+    section {
+      background-color: #FFFFCC;
+      border-radius: 25px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+      position: relative;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #FFFFCC;
+      border-radius: 50%;
+      top: -10px;
+      left: 20px;
+    }
+
     h2 {
-      color: #0057b7;
-      margin-top: 40px;
+      color: #FF66CC;
     }
-    a {
-      color: #007acc;
-    }
+
     ul {
-      padding-left: 20px;
+      padding-left: 1.5rem;
     }
+
     li {
-      margin-bottom: 20px;
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: #FF66CC;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    body::after {
+      content: '';
+      background-image: url('https://i.imgur.com/McTtZLr.png');
+      background-repeat: repeat;
+      opacity: 0.03;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
     }
   </style>
 </head>
 <body>
-    <header>
+  <header>
     <h1>Alexa Basarte</h1>
-    <p>My CS Legacy Portfolio </p>
+    <p>My CS Legacy Portfolio</p>
   </header>
 
   <main>
-
     <section>
       <h2>About Me</h2>
       <p>Hi! I'm Alexa Basarte, and this is my 4th year in the Computer Science program.</p>
-      <p>After graduation, I plan to go to college and follow a pre-med track, I know, Surprisingly, it’s not related to computer science, but that could change.</p>
+      <p>After graduation, I plan to go to college and follow a pre-med track, I know, surprisingly, it’s not related to computer science, but that could change.</p>
       <p>I chose CS because after my freshman year, I discovered that I really enjoyed coding. It challenged me, and it let me be creative in ways I didn’t expect.</p>
     </section>
 
@@ -90,7 +145,6 @@
       <p>Read my advice for future CS students:</p>
       <a href="README.md" target="_blank">📜 Dear Future CS Students</a>
     </section>
-
   </main>
 </body>
 </html>
